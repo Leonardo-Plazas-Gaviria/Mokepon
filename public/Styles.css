@@ -1,0 +1,157 @@
+@import url('https://fonts.googleapis.com/css2?family=Caveat&family=Kalam&display=swap');
+
+body{
+    font-family: 'Caveat', cursive;
+    background-image: url(./imagenes/bosque.png);
+}
+
+
+#seleccionar-mascota {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.titulo { 
+    font-family: 'Kalam', cursive;
+    color:yellow;
+    font-size: 32px;
+}
+.subtitulo {
+    color:rgb(209, 117, 20);
+    font-size: 24px;
+}
+.tarjetas, .tarjetas-ataques {
+    display: flex;
+    gap: 10px;
+}
+.tarjeta-de-mokepon {
+    width: 180px;
+    height: 100px;
+    background: #3E6D9C;
+    padding: 10px;
+    box-sizing: border-box;
+    margin: 10px;
+    border: 2px solid black;
+    border-radius: 20px;
+    display: flex;
+    color: white;
+    font-size: 20px;
+    justify-content: center;
+    align-items: center;
+}
+
+.tarjeta-de-mokepon img {
+    width: 80px;
+}
+
+#boton-mascota {
+    width: 180px;
+    height: 40px;
+    border-radius: 40px;
+    background: transparent;
+    border: 2px solid white;
+    color: white;
+    font-family: 'Caveat', cursive;
+    font-size: 30px;
+    margin-top: 30px;
+}
+
+
+input {
+    display: none;
+}
+
+input:checked + label {
+    background-color: red;
+
+}
+
+#seleccionar-ataque {
+    flex-direction: column;
+    align-items: center;
+}
+
+.boton-de-ataque {
+    background-color: #1a3bb1;
+    padding: 10px;
+    box-sizing: border-box;
+    border-radius: 20px;
+    border-color: transparent;
+    width: 80px;
+    color: white;
+    font-family: 'Caveat', cursive;
+}
+
+#mensajes {
+    width: 280px;
+    background: rgb(252, 250, 247);
+    padding: 20px;
+    margin-top: 20px;
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+#boton-reiniciar {
+    border: none;
+    color: green;
+    background-color: none;
+    font-family: 'Caveat', cursive;
+}
+
+.ataques {
+    display: grid;
+    grid-template-columns: 100px 100px;
+}
+
+#vidas-jugador, #vidas-enemigo {
+    font-size: 32px;
+    margin-bottom: 0;
+
+}
+
+.ataques-jugador, .ataques-enemigo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+.ataques {
+    color: blanchedalmond;
+    }
+
+#ver-mapa {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;  
+}
+
+#ver-mapa button {
+    width: 45px;
+    height: 45px;
+    border-radius: 40px;
+    background: transparent;
+    border: 2px solid white;
+    color: white;
+    font-family: 'Caveat', cursive;
+    font-size: 30px;
+    margin-top: 5px;
+}
+
+@media (max-width: 560px){
+    .tarjetas, .tarjetas-ataques{
+        flex-direction: column;
+    }
+}
+
+@media (max-width: 300px){
+    #ver-mapa div{
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+    }
+}
