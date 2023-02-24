@@ -4,7 +4,8 @@
 - Buscar la linea que dice la ip: IPv4 Address. . . . . . . . . . . : 192.168.1.3
 - Descargar los archivos y abrir el archivo mokepon.js el cual esta en la ruta Mokepon\public\js\mokepon.js
 - Verificar en las lineas de codigo: 166-207-269-282-433 que la dirección ip sea la misma obtenida por el comando ipconfig, sino es asi cambiar por la dirección ip actual del equipo.
-- Guardar los cambios en el archivo mokepon.js e iniciar el servidor de node js, para esto se debe de abrir la terminal de windows o de Visual Studio Code y situarse en la carpeta raiz del juego **Mokepon>**
+- Asegurarse de tener instalado Node.js en el equipo que va a iniciar el servidor.
+- Guardar los cambios en el archivo mokepon.js e iniciar el servidor de Node.js, para esto se debe de abrir la terminal de windows o de Visual Studio Code y situarse en la carpeta raiz del juego **Mokepon>**
 - Escribir el comando **node index.js** la terminal deberia de entregar el mensaje **Servidor Funcionando**
 - En un navegador abrir mi direccion ip que en este caso es:  http://192.168.1.3:8080/ (esta puede variar segun los resultados del comando ipconfig)
 - En otro dispositivo conectado a la misma red ingresar a la misma dirección del punto anterior.
